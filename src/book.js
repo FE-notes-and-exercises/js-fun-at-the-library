@@ -10,13 +10,13 @@ function buildMainCharacter(fname, fage, fpronouns) {
   };
 }
 
-function calculatePageCount(booktitle) {
-  return booktitle.length * 20
+function calculatePageCount(bookTitle) {
+  return bookTitle.length * 20
 }
 
 function saveReview(review, array) {
   if (!array.includes(review)){
-    array.push(review)
+    array.push(review);
   }
 }
 
@@ -29,12 +29,16 @@ function writeBook(bookTitle, bookCharacter, bookGenre) {
   }
 }
 
+function editBook(bookTitle) {
+  bookTitle.pageCount = bookTitle.pageCount * .75
+}
+
 module.exports = {
   createTitle,
   buildMainCharacter,
   saveReview,
   calculatePageCount,
   writeBook,
-  // editBook
+  editBook
 }
 
