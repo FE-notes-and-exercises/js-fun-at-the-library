@@ -12,6 +12,16 @@ function unshelfBook (bookTitle, genreShelf) {
   }
 }
 
+// Another way to write function with for loop
+// function unshelfBook(bookTitle, genreShelf) {
+//   for (var i = 0; i < genreShelf.length; i++) {
+//     if (genreShelf[i].title == bookTitle) {
+//       genreShelf.splice(i, 1);
+      
+//     }
+//   }
+// }
+
 module.exports = {
   shelfBook,
   unshelfBook,
