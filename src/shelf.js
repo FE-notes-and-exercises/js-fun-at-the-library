@@ -17,7 +17,6 @@ function unshelfBook(bookTitle, genreShelf) {
   for (var i = 0; i < genreShelf.length; i++) {
     if (genreShelf[i].title == bookTitle && i !== -1) {
       genreShelf.splice(i, 1);
-      
     }
   }
 }
